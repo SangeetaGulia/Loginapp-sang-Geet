@@ -7,7 +7,7 @@ import scala.collection.mutable.ListBuffer
   */
 object Account {
 
-  var listOfUser = ListBuffer(("sang@sang.com","1234"))
+  var listOfUser = ListBuffer(("sang@sang.com","1234"),("abc@gmail.com","abcdef"))
 
 
   def createUser(email: String, password: String): Unit = {
