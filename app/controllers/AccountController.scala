@@ -19,12 +19,7 @@ class AccountController extends Controller{
       }
   }
 
-
-
-
-
   def logout = Action {  implicit request =>
     Redirect(routes.LoginController.loginPage()).withNewSession
   }
-
 }

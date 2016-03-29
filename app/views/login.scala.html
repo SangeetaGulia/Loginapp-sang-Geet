@@ -4,14 +4,14 @@
 
 @main("login"){
 
-
+<div style="background-image: url(@routes.Assets.versioned("images/1.jpg")) ">
 
     @if(flash.get("error").isDefined){
       <div class="alert alert-danger">
     <strong>@flash.get("error")</strong>
             </div>
 }
-</p>
+
 <h1> Login </h1>
     @helper.form(action=routes.LoginController.authenticate()){
     @helper.inputText(userForm("email"))
@@ -24,4 +24,7 @@
 
 <a href="@routes.SignupController.showSignUpPage"> Create New User </a>
 
+
+
+</div>
 }
